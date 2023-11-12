@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="mats/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid d-flex justify-content-between">
+            <i class="fa-solid fa-moon fs-2 mt-3 ms-2" id = "Mood"></i>
+            <i class="fa-solid fa-volume-high fs-2 mt-3 me-2" id ="Volume"></i>
+        </div>
+    </header>
+    <h2 class="text-center mt-3" id ="Announcement">Player X Turn</h2>
+    <div class="Game-Container mt-0">
+        <div class="Game container">
+        <div class="row d-flex justify-content-between text-center ">
+            <div class="col">
+                <div class="Selector Top-Left"></div>
+            </div>
+            <div class="col mx-1">
+                <div class="Selector Top-Center"></div>
+            </div>
+            <div class="col ">
+                <div class="Selector Top-Rght"></div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-between text-center my-1">
+            <div class="col">
+                <div class="Selector Mid-Left"></div>
+            </div>
+            <div class="col mx-1">
+                <div class="Selector Mid-Center"></div>
+            </div>
+            <div class="col">
+                <div class="Selector Mid-Right"></div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-between text-center">
+            <div class="col">
+                <div class="Selector Bot-Left"></div>
+            </div>
+            <div class="col mx-1">
+                <div class="Selector Bot-Center"></div>
+            </div>
+            <div class="col">
+                <div class="Selector Bot Right"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Score container">
+    <div class="row d-flex justify-content-between">
+        <div class="col-sm-3 text-center">
+            <h2>Player X</h2>
+            <h2 id = "playerX_Score">0</h2>
+        </div>
+        <div class="col-sm-3 text-center">
+            <h2>Player O</h2>
+            <h2 id = "playerY_Score">0</h2>
+        </div>
+        <div class="col-sm-3 text-center">
+            <h2>Tie</h2>
+            <h2 id = "tie_Score">0</h2>
+        </div>
+    </div>
+</div>
+</body>
+<script src="Code.js"></script>
+</html>

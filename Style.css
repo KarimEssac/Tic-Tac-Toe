@@ -1,0 +1,95 @@
+*
+{
+    transition: all 0.3s ease;
+}
+:root
+{
+    --bg-color: rgb(10,10,10);
+    --font-color: rgb(221,221,221);
+}
+body
+{
+    background-color: var(--bg-color)
+}
+i
+{
+    color: var(--font-color);
+    cursor: pointer;
+}
+.Game-Container {
+    display: flex;
+    height: 72vh;
+    align-items: center;
+    justify-content: center;
+}
+.Selector
+{
+    display: flex;
+    height: 20vh;
+    color: var(--font-color);
+    font-size: 120px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.col
+{
+    background-color: var(--bg-color);
+    cursor: pointer;
+}
+.Score
+{
+    width: 50%;
+}
+.Game
+{
+    width: 48%;
+    background-color: var(--font-color);
+}
+h2
+{
+    color: var(--font-color);
+}
+/*media queries*/
+@media screen and (max-width: 400px){
+    .Game
+    {
+        width: 80%;
+    }
+    .Score
+    {
+        width: 100%;
+    }
+    .Selector
+    {
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 320px){
+    .Selector
+    {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 500px){
+    .Selector
+    {
+        font-size: 70px;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 1200px){
+    .Game
+    {
+        width: 75%;
+    }
+    .Score
+    {
+        width: 100%;
+    }
+}
+@media screen and (min-height: 700px) and (max-height:900px){
+    .Selector
+    {
+    height: 15vh;
+    }
+}
